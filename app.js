@@ -37,11 +37,12 @@ const updateUI = (uniSet) => {
   let div = document.createElement("div");
 
   uniSet.forEach((item) => {
-    list += `<li>${item}</li>`;
+    list += <li>${item}</li>;
     return list;
   });
 
   div.innerHTML = list;
   form.after(div);
 };
+
 form.addEventListener("submit", getCountry);
